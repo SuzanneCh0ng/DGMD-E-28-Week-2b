@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  .square {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid;
+    margin: 10px;
+    text-align: center;
+  }
+
+  td:hover {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    margin: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Tic Tac Toe</h1>
+
+<table>
+<script>
+  const NUM_SQUARES = 9;
+  for (let i = 0; i < NUM_SQUARES; i++) {
+    if (i % 3 === 0) document.write("<tr>");
+    const id = "sq" + i;
+    document.write("<td><div class='square' id='" + id + "'></div></td>");
+    if (i % 3 === 2) document.write("</tr>");
+  }
+</script>
+</table>
+</body>
+</html>
